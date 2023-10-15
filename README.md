@@ -19,7 +19,7 @@ A service in Node.js using Express.js that can be deployed to AWS/GCP which expo
     POST /streams: Create a new stream.
     POST /streams/:id/start: Start a stream.
     POST /streams/:id/stop: Stop a stream.
-    DELETE /streams/:id: Destroy a stream.
+    DELETE /streams/:id : Destroy a stream.
   You can use Express.js middleware to handle request and response data.
 
 5. Implement the Stream Management:
