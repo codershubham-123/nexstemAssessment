@@ -31,6 +31,24 @@ A service in Node.js using Express.js that can be deployed to AWS/GCP which expo
        Verify that the WebSocket functionality is working as expected.
 
 7. Deployment to AWS/GCP:
-       You can deploy your application to AWS Lambda or AWS EC2, depending on your preference and requirements.
-       Set up the necessary configurations, including network, security groups, and environment variables.
+   Prerequisites:
+          You need an AWS account.
+          Install the AWS Command Line Interface (CLI) on your local machine.
+          Make sure your code is compatible with AWS Lambda's Node.js runtime.
+   
+   Create Your Lambda Function:
+       1. Log in to the AWS Management Console.
+       2. Open the Lambda service.
+       3. Click the "Create function" button.
+       4. Choose "Author from scratch."
+       5. Configure your function:
+              Name: Give your function a name.
+              Runtime: Select "Node.js" (choose a compatible version).
+              Role: Create a new role with the necessary permissions, or select an existing role.
+       6. Click "Create function."
+
+   Create a deployment package of your code with the help of npm.
+
+   Upload Your Deployment Package:
+       In the Lambda function configuration, under the "Function code" section, you can upload your deployment package directly or provide an S3 URL where the package is stored.
 
